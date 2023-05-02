@@ -14,7 +14,8 @@ class ProjectController extends Controller
 
         //ritorno i project in formato json
         return response()->json([
-            'projects'=> $projects,
+            'success'=> true,
+            'results'=> $projects,
         ]);
     }
 }
